@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 550px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(52,58,64)" class="text-white">
+    <header>
+        <!-- Navigation bar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Nature Peace</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- Navigation bar End -->
+
+        <!-- Carousel start -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="10000">
+                    <!-- class="d-block w-100" -->
+                    <img src="./Resources/IMG_20181108_154414.jpg" alt="..." width="1300px" height="560px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <img src="./Resources/IMG_20181108_154526.jpg" width="1300px" height="560px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="10000">
+                    <img src="./Resources/scenery.jpg" width="1300px" height="560px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel end -->
+
+
+    </header>
+    <!-- About us -->
+    <section>
+        <div class="container-fluid ">
+            <h1 class="text-center text-capitalize pt-4">About us</h1>
+            <hr style="background-color: white;" class="w-25 mx-auto pb-0 mb-5">
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h1 class="text-center">Who Am I?</h1>
+                <hr style="background-color: white;">
+                <p>Nature, as one say is such a beauty and when taken in its broadest sense it could be made equal to
+                    natural or the physical world. It also depicts life in general.<br><br>
+                    
+                    Nature is believed to be the gift and blessing of God and one has the responsibility to preserve it
+                    in all its beauty and not destroy it for one`s benefits. Nature has its own way of existence and man
+                    could not make any kind of major changes, so far. Nature is a beauty and we need to learn to admire
+                    and adorn that beauty.
+                    <br> <br> 
+                    <button class="btn btn-primary">Wanna Know Me?</button>
+                
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End of About us -->
+    <!-- Service start -->
+    <section>
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-2">Services</h1>
+        <hr style="background-color: white;" class="w-50 mx-auto pb-0 mb-5">
+    
+    <div class="row mb-5 ">
+        <div class="col-lg-4 col-md-4 col-12">
+    <div class="card bg-dark border-light" >
+        <img src="./Resources/IMG_20181108_154414.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-secondary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-12">
+        <div class="card bg-dark border-light" >
+            <img src="./Resources/IMG_20181108_154414.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <h5 class="card-title border-light">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card bg-dark border-light" >
+                <img src="./Resources/IMG_20181108_154414.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
+            </div>         
+</div>
+</div>
+    </section>
+    <!-- Service end -->
+
+    <!-- Contact start -->
+    <section class="bg-primary text-white">
+        <article class="text-center py-5">
+            <h3 class="display-4 ">7508389090</h3>
+            <p>If you want the service, Call us now.</p>
+            <button class="btn btn-warning">Contact Now</button>
+        </article>
+    </section>
+    <!-- Contact end -->
+
+    <!-- Gallery starty -->
+    <section>
+        <div class="container">
+            <h1 class="text-center text-capitalize pt-2">Gallery</h1>
+            <hr style="background-color: white;" class="w-50 mx-auto pb-0 mb-5">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                    <img src="/Resources/IMG_20181108_154414.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            
+
+    </div>
+</section>
+    <!-- Gallery end -->
+
+    <!-- Registration Form start -->
+    <section class="bg-primary ">
+        <article class=" py-5">
+            <div class="text-white text-center">
+            <h3 class="display-4 ">Want To Join</h3>
+            <p>Be a part of Innovative Design Family.</p>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Join Now</button>
+            </div>
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" >
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+        </article>
+    </section>
+    <!-- Registration Form end -->
+
+    <!-- Contact Starts -->
+
+    <section>
+        <div class="container mb-5">
+            <h1 class="text-center text-capitalize pt-5">Contact Us</h1>
+            <hr style="background-color: white;" class="w-50 mx-auto pb-0 mb-2">
+
+            <div class="w-50 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="name1">Name</label>
+                        <input type="text" class="form-control" id="name1" placeholder="Enter your name">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber">Contact</label>
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Enter your contact no.">
+                      </div>
+                      <div class="form-group">
+                          <label for="textarea">Description</label>
+                          <textarea name="description" id="description" cols="30" rows="3" class="form-control"></textarea>
+                      </div>
+                   
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Call me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            </div>
+    </section>
+    <!-- Contact End -->
+
+    <footer>
+        <p class="text-center bg-dark text-white">@copyright UniDesign.com 2020</p>
+    </footer>
+</body>
+
+</html>
